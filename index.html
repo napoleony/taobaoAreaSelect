@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>地址选择插件</title>
+    <link rel="stylesheet" href="areaselect/style.css">
+    <script src="../jquery.js"></script>
+    <!--[if lt IE 7]><script src="areaselect/json2.js"></script><![endif]-->
+    <script src="areaselect/areaselect.js"></script>
+</head>
+<body>
+
+    <div class="box">
+        <div class="address-box">
+            <div class="input-box" style="display: none;">
+                <input class="country" name="country" type="text">
+                <input class="province" name="province" type="text">
+                <input class="city" name="city" type="text">
+                <input class="county" name="county" type="text">
+                <input class="town" name="town" type="text">
+            </div>
+            <div class="country-select arrow-bg">
+                <a class="country-now" href="javascript:void(0)">请选择国家</a>
+                <ul class="country-list">
+                    <li class="current"><i>&radic;</i><a data-value="0" href="javascript:void(0)">请选择国家</a></li>
+                    <li><i>&radic;</i><a data-value="1" href="javascript:void(0)">中国</a></li>
+                    <li><i>&radic;</i><a data-value="2" href="javascript:void(0)">海外</a></li>
+                </ul>
+            </div>
+            <div class="location-box arrow-bg">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="box">
+
+        <div class="address-box2">
+            <div class="input-box" style="display: none;">
+                <input class="country" name="country" type="text">
+                <input class="province" name="province" type="text">
+                <input class="city" name="city" type="text">
+                <input class="county" name="county" type="text">
+                <input class="town" name="town" type="text">
+            </div>
+            <div class="country-select">
+                <a class="country-now" href="javascript:void(0)">请选择国家</a>
+                <ul class="country-list">
+                    <li class="current"><i>&radic;</i><a data-value="0" href="javascript:void(0)">请选择国家</a></li>
+                    <li><i>&radic;</i><a data-value="1" href="javascript:void(0)">中国</a></li>
+                    <li><i>&radic;</i><a data-value="2" href="javascript:void(0)">海外</a></li>
+                </ul>
+            </div>
+            <div class="location-box">
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $.areaSelect('.address-box');
+        $.areaSelect('.address-box2');
+    </script>
+</body>
+</html>
+
