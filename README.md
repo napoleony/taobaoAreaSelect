@@ -1,0 +1,3 @@
+# taobaoAreaSelect
+仿淘宝地址选择
+参照淘宝的地址选择做的一个jQuery插件
